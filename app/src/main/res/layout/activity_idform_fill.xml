@@ -19,61 +19,67 @@
 
     <EditText
         android:id="@+id/ClientName"
-        android:layout_width="90dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="36dp"
         android:inputType="textPersonName"
-        android:text="@string/ClientName"
+        android:hint="@string/ClientName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title" />
+        app:layout_constraintTop_toBottomOf="@+id/Telephone" />
 
     <EditText
         android:id="@+id/ClientBusiness"
-        android:layout_width="85dp"
-        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/ClientBusiness"
+        android:layout_marginTop="44dp"
+        android:inputType="text"
+        android:hint="@string/ClientBusiness"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ClientName" />
 
     <EditText
         android:id="@+id/Telephone"
-        android:layout_width="93dp"
-        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Telephone"
+        android:layout_marginTop="96dp"
+        android:inputType="phone"
+        android:hint="@string/Telephone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ClientBusiness" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/Email"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ClientBusiness" />
 
     <EditText
-        android:id="@+id/Email"
-        android:layout_width="67dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Telephone" />
-
-    <EditText
         android:id="@+id/Boat"
-        android:layout_width="65dp"
-        android:layout_height="39dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Boat"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:hint="@string/Boat"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
@@ -82,7 +88,11 @@
         android:id="@+id/BeginQuoteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:onClick="CreateQuote"
         android:text="@string/BeginQuote"
         app:layout_constraintEnd_toEndOf="parent"

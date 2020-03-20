@@ -51,6 +51,7 @@ public class IDFormFill extends AppCompatActivity {
                 try {
                     reader = new BufferedReader(new FileReader(testFile));
                     String line;
+                    String textFromFile = "";
 
                     while ((line = reader.readLine()) != null) {
                         textFromFile += line.toString();
